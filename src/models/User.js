@@ -20,19 +20,19 @@ const sequelize = require('../utils/connection');
 const User = sequelize.define('user', {//!User -> users
     //Definimos las columnas aquí
     firstName: {
-        tyope: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     lastName: {
-        tyope: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     email: {
-        tyope: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     birthday: {
-        tyope: DataTypes.DATEONLY, //Año, mes y día
+        type: DataTypes.DATEONLY, //Año, mes y día
         allowNull: false
     },
     

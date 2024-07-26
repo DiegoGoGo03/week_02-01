@@ -1,10 +1,10 @@
-const { DataTypes, Model } = require('sequelize');
+const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection'); 
 
 const Car = sequelize.define('car', {//!User -> users
     //Definimos las columnas aquí
     brand: {
-        tyope: DataTypes.STRING,
+        type: DataTypes.STRING,
         allowNull: false
     },
     model: {
@@ -15,11 +15,11 @@ const Car = sequelize.define('car', {//!User -> users
         type: DataTypes.INTEGER,
         allowNull: false
     },
-    colorbrand: {
+    color: {
         type: DataTypes.STRING,
         allowNull: false
     },
     
-})
+});
 
 module.exports = Car;
